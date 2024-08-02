@@ -1,0 +1,278 @@
+/*FADE IN ANIMATION*/
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.no-animation {
+    animation: none;
+  }
+
+
+/* THE HEADER */
+.linksMain {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Matrix Code NFI';
+    src: url('../fonts/matrix code nfi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+}
+
+header {
+    position: fixed; /* This makes the header fixed at the top */
+    top: 0; /* Ensure it stays at the top */
+    left: 1em; /* Align it to the left */
+    right: 1em; /* Make sure it covers the full width */
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+header h1, header h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #666;
+}
+.linksMain a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00FF41;
+}
+
+nav.linksMain a:hover {
+    text-shadow: 0 0 5px #00FF41,0 0 5px #00FF41, 0 0 5px;;
+}
+
+
+/* TITLE */ 
+#name {
+    text-align: center;
+    font-size: 150px;
+    text-shadow: 0 0 5px #00FF41,0 0 5px #00FF41, 0 0 5px;
+    font-family: 'Matrix Code NFI';
+    src: url('../fonts/matrix code nfi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* SUBTITLE */
+#subtitle {
+    font-size: 50px;
+    font-family: 'Matrix Code NFI';
+    src: url('../fonts/matrix code nfi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* BODY FONT */
+#subtitle {
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top:-50px;
+}
+  
+body {
+    color: white;
+    font-family: 'Matrix Code NFI', sans-serif;
+    text-shadow: 0 0 2px #00FF41,0 0 1px #00FF41;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#Matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+main {
+    position: relative;
+    z-index: 1; 
+    color: white; 
+}
+
+main a {
+    text-decoration: none;
+}
+
+#projectsButton {
+    --green:white;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    display: block;
+    margin: auto;
+    font-family: 'Matrix Code NFI';
+    src: url('../fonts/matrix code nfi.ttf') format('truetype');    
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  #projectsButton:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+    text-decoration: none !important;
+  }
+  
+  #projectsButton:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  #projectsButton:hover:before {
+    transform: translateX(25em);
+  }
+
+/* ABOUT ME */
+.aboutMe h3{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Matrix Code NFI';
+    src: url('../fonts/matrix code nfi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    transform: translateY(-10px);
+}
+.aboutMe {
+    position: relative;
+    font-size: 2.5rem;
+    background-color: black;
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin-left: 9%;
+    margin-right: 9%;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+    font-family: 'Matrix Code NFI';
+    src: url('../fonts/matrix code nfi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@media (max-width: 1200px) {
+    .aboutMe {
+        font-size: 2rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutMe {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutMe {
+        font-size: 1rem;
+        padding: 5px;
+    }
+}
+
+.aboutMe img {
+    display: grid;
+    place-items: center;
+    width:200px;
+    margin: 0 auto;
+    border-radius: 80px;
+}
+
+.aboutMe #highlight {
+    color: #00FF41;
+    text-shadow: 0 0 2px #00FF41,0 0 2px;
+}
+
+/* THE FOOTER */
+
+/* positioning of footer elements */
+
+/* Icons */
+
+footer {
+    background-color: black;
+    border: #00FF41;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+    position:static;
+    opacity: 50%;
+}
+
+footer h2 {
+    margin-left: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; 
+    gap: 150px; 
+    align-items: center; 
+
+}
+
+.footer-container img {
+    display: inline-block;
+    width: 70px;
+    height: 55px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-left: 20px;
+}
+
+#linkedIn {
+    height: 60px;
+}
